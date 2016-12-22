@@ -26,7 +26,11 @@ repositories {
 }
 
 dependencies {
+    compile 'org.pcap4j:pcap4j-core:1.6.6'
+    compile 'com.github.ericytsang:lib.bytearrayextensions:1.0.0'
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    testCompile 'org.slf4j:slf4j-simple:1.7.21'
+    testCompile 'org.pcap4j:pcap4j-packetfactory-static:1.6.6'
     testCompile "junit:junit:4.11"
     testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
 }
